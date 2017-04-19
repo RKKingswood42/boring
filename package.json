@@ -1,0 +1,22 @@
+{
+  "name": "boring-chat",
+  "version": "0.0.3",
+  "description": "an exceptionally boring chat room",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/icankillyouwithmybrain.boring-chat-app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Rachel Kay Kingswood",
+  "license": "",
+  "dependencies": {
+    "hapi": "~7.5.0",
+    "path": "^0.4.9"
+  },
+  "devDependencies": {
+    "connect-modrewrite": "^0.7.9",
+    "es5-shim": "^4.0.1"
+  }
+}
