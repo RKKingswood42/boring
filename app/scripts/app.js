@@ -8,11 +8,11 @@
          $stateProvider
          .state('landing', {
              url: '/',
-             controller: 'RoomsCtrl',
+             controller: 'RoomsCtrl as rooms',
              templateUrl: '/templates/landing.html'
          });
      }
     angular
-         .module('boringChat', ['ui.router', 'firebase'])
-         .config(config);
+        .module('boringChat', ['ui.router', 'firebase'])
+        .config(config);
  })();

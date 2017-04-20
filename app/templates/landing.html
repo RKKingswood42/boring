@@ -1,8 +1,8 @@
 <section class="hero-content">
-     <h1 class="hero-title">{{ heroTitle }}</h1>
+     <h1 class="hero-title">{{ rooms.heroTitle }}</h1>
 </section>
-<section ng-repeat="chatRoom in RoomsCtrl.rooms">
+<section ng-repeat="chatRoom in rooms.rooms">
      <div class="point column third">
-         <h5 class="room-link">{{ chatRoom }}</h5>
+         <h5 class="room-link">{{ chatRoom.$value }}</h5>
      </div>
 </section>   

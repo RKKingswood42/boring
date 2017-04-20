@@ -19,20 +19,25 @@
 -->
     </nav>
     <ui-view></ui-view>
-    <script src="https://www.gstatic.com/firebasejs/3.7.8/firebase.js"></script>
-    <script>
-        var config = {
-            apiKey: "AIzaSyDydIc7T_LFD7WEvIWs0d6Hg8NGYRmWTAM",
-            authDomain: "boring-chat.firebaseapp.com",
-            databaseURL: "https://boring-chat.firebaseio.com",
-            projectId: "boring-chat",
-            storageBucket: "boring-chat.appspot.com",
-            messagingSenderId: "870887417078"
-            };
-        firebase.initializeApp(config);
-    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
+    
+    <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script>
+    <script>
+      var config = {
+        apiKey: "AIzaSyDydIc7T_LFD7WEvIWs0d6Hg8NGYRmWTAM",
+        authDomain: "boring-chat.firebaseapp.com",
+        databaseURL: "https://boring-chat.firebaseio.com",
+        projectId: "boring-chat",
+        storageBucket: "boring-chat.appspot.com",
+        messagingSenderId: "870887417078"
+      };
+      firebase.initializeApp(config);
+    </script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+
+    
     <script src="/scripts/app.js"></script>
     <script src="/scripts/Room.js"></script>
     <script src="/scripts/controllers/RoomsCtrl.js"></script>

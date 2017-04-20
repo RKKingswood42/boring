@@ -4,13 +4,14 @@
   "description": "an exceptionally boring chat room",
   "repository": {
     "type": "git",
-    "url": "https://github.com/icankillyouwithmybrain.boring-chat-app",
+    "url": "https://github.com/icankillyouwithmybrain/boring-chat"
+  },
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "author": "Rachel Kay Kingswood",
-  "license": "",
+  "license": "Creative Commons",
   "dependencies": {
     "hapi": "~7.5.0",
     "path": "^0.4.9"
