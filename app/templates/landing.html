@@ -1,8 +1,15 @@
-<section class="hero-content">
-     <h1 class="hero-title">{{ rooms.heroTitle }}</h1>
-</section>
-<section ng-repeat="chatRoom in rooms.rooms">
-     <div class="point column third">
-         <h5 class="room-link">{{ chatRoom.$value }}</h5>
-     </div>
-</section>   
+<div class="chooseRoom">
+    <section class="hero-content">
+         <h3 class="hero-title">{{ rooms.heroTitle }}</h3>
+    </section>
+    <div class="roomChoices">
+        <section ng-repeat="chatRoom in rooms.rooms">
+             <div class="roomLink">
+                 <a class="room-link" href=#>{{ chatRoom.$value }}</a>
+             </div>
+        </section> 
+    </div>
+    <div ng-controller="ModalCtrl as modal">
+        <button class="createBtn" ng-click="modal.openModal()">Create Chat Room</button>
+    </div>
+</div>

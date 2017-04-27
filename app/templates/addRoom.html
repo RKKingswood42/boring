@@ -1,0 +1,16 @@
+<div>
+        <div class="modal-header">
+            <h3 class="modal-title" id="addRoom-title">Add a New Chat Room</h3>
+        </div>
+        <div class="modal-body" id="addRoom-body">
+            <form class="form" ng-submit='modalInstance.okay()'>
+                <div class="form-group">
+                    <label class="form-group-label">
+                        <input type="text" class="form-control" id="addRoomName" ng-model="modalInstance.name" placeholder="New Chatroom Name">
+                    </label>
+                </div>
+                <button type="button" class="btn btn-secondary" ng-click="modalInstance.cancel()">Never Mind</button>
+                <button type="submit" class="btn btn-primary" ng-click="modalInstance.okay()">Add Room</button>
+            </form>    
+        </div>
+</div>

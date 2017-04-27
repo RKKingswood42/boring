@@ -5,23 +5,19 @@
     <title>boringChat</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="./styles/normalize.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600|Sigmar+One" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./styles/main.css">
 </head>
 <body>
     <nav class="navbar">
         <a href="index.html" class="logo">
-            <img src="#" alt="boring chat logo" class="logo">
+            <h1 src="#" alt="boring chat logo" class="logo">Boring Chat</h1>
         </a>
-<!--
-        <div class="links-container">
-            <a ui-sref="collection" class="navbar-link">my collection</a>
-        </div>
--->
     </nav>
     <ui-view></ui-view>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
     <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
-    
     <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script>
     <script>
       var config = {
@@ -34,12 +30,12 @@
       };
       firebase.initializeApp(config);
     </script>
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
-
-    
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
     <script src="/scripts/app.js"></script>
     <script src="/scripts/Room.js"></script>
     <script src="/scripts/controllers/RoomsCtrl.js"></script>
+    <script src="/scripts/controllers/ModalCtrl.js"></script>
+    <script src="/scripts/controllers/ModalInstanceCtrl.js"></script>
 </body>
 </html>
