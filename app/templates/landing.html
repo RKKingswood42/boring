@@ -5,11 +5,19 @@
     <div class="roomChoices">
         <section ng-repeat="chatRoom in rooms.rooms">
              <div class="roomLink">
-                 <a class="room-link" href=#>{{ chatRoom.$value }}</a>
+                 <a class="room-link" ng-click="rooms.switchRooms(chatRoom)">{{ chatRoom.$value }}</a>
              </div>
         </section> 
     </div>
     <div ng-controller="ModalCtrl as modal">
         <button class="createBtn" ng-click="modal.openModal()">Create Chat Room</button>
+    </div>
+</div>
+<div class="chatrooom">
+    <div class="messageView">
+        <section ng-repeat="message in thisRoomMessages">{{ message.message }}</section>
+    </div>
+    <div class="chatInterface">
+        write, edit, send and stuff here
     </div>
 </div>

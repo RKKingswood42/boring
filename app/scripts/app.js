@@ -8,8 +8,12 @@
          $stateProvider
          .state('landing', {
              url: '/',
-             controller: 'RoomsCtrl as rooms',
-             templateUrl: '/templates/landing.html'
+             views: {
+                 'roomSelection': {
+                     controller: 'RoomsCtrl as rooms',
+                     templateUrl: '/templates/landing.html'
+                 }
+             }
         })
      }
     angular

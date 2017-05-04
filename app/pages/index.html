@@ -15,7 +15,8 @@
             <h1 src="#" alt="boring chat logo" class="logo">Boring Chat</h1>
         </a>
     </nav>
-    <ui-view></ui-view>
+    <div ui-view="roomSelection" class="roomSelect"></div>
+    <div ui-view="chatRoom" class="chatWindow"></div>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
     <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script>
@@ -34,8 +35,10 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
     <script src="/scripts/app.js"></script>
     <script src="/scripts/Room.js"></script>
+    <script src="/scripts/Message.js"></script>
     <script src="/scripts/controllers/RoomsCtrl.js"></script>
     <script src="/scripts/controllers/ModalCtrl.js"></script>
     <script src="/scripts/controllers/ModalInstanceCtrl.js"></script>
+    
 </body>
 </html>
