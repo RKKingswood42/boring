@@ -6,7 +6,6 @@
             this.room = roomObj;
             $scope.roomName = roomObj.$value;
             $scope.thisRoomMessages = Message.getByUid(roomObj.$id);
-            console.log($scope.thisRoomMessages);
         }
     }
     angular

@@ -17,6 +17,6 @@
         })
      }
     angular
-        .module('boringChat', ['ui.router', 'ui.bootstrap', 'firebase'])
+        .module('boringChat', ['ui.router', 'ui.bootstrap', 'firebase', 'ngCookies'])
         .config(config);
  })();

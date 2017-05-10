@@ -1,0 +1,15 @@
+<div>
+    <div class="modal-header">
+            <h3 class="modal-title" id="addRoom-title">Choose a Username</h3>
+        </div>
+        <div class="modal-body" id="username-body">
+            <form class="form" ng-submit='modalInstance.okay(modalInstance.username)'>
+                <div class="form-group">
+                    <label class="form-group-label">
+                        <input type="text" class="form-control" id="selectUsername" ng-model="modalInstance.name" placeholder="username">
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary" ng-click="modalInstance.okay()">Enter Boring Chat</button>
+            </form>    
+        </div>
+</div>
