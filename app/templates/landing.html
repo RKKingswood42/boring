@@ -15,9 +15,10 @@
 </div>
 <div class="chatRoom">
     <div class="messageView">
-        <section ng-repeat="message in thisRoomMessages">{{ message.message }}</section>
+        <section ng-repeat="message in thisRoomMessages"><div>{{ message.username }}</div><br/>{{ message.message }}</section>
     </div>
-    <div class="chatInterface">
-        write, edit, send and stuff here
-    </div>
+    <form ng-submit="rooms.send(rooms.room, rooms.newMessage)" class="chatInterface">
+        <input type="text" ng-model="rooms.newMessage">
+        <button type="submit">Send</button>
+    </form>
 </div>

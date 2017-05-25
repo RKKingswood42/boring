@@ -1,7 +1,7 @@
 (function() {
   function BoringCookies($cookies, $uibModal, $scope) {
-    var currentUser = $cookies.get('boringChatCurrentUser');
-    if (!currentUser || currentUser === '') {
+    this.currentUser = $cookies.get('boringChatCurrentUser');
+    if (!this.currentUser || this.currentUser === '') {
       var modalInstance = $uibModal.open({
                 animation: false,
                 ariaLabelledBy: 'modal-title',
@@ -12,8 +12,7 @@
       })
       modalInstance.result.then(function(username){
           $cookies.put('boringChatCurrentUser', username);
-        }); 
-      currentUser = $cookies.get('boringChatCurrentUser');    
+        });    
     }
   }
 
